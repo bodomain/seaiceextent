@@ -1,0 +1,99 @@
+{
+  "execution_time_utc": "2026-11-11T16:44:16.867499+00:00",
+  "monitoring_date": "2026-11-10T00:00:00",
+  "last_complete_trend_year": 2025,
+  "product": "EUMETSAT OSI SAF Sea-Ice Index v3.0 (OSI-420-a)",
+  "doi": "10.15770/EUM_SAF_OSI_0026",
+  "data_license": "CC BY 4.0",
+  "analysis_units": "million km\u00b2",
+  "parameters": {
+    "baseline": [
+      1991,
+      2020
+    ],
+    "first_trend_year": 1979,
+    "hac_lags": 3,
+    "alpha": 0.05,
+    "bootstrap_draws": 4000,
+    "seed": 20261111,
+    "period_coverage_required": 1.0
+  },
+  "python": "3.13.5",
+  "platform": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+  "package_versions": {
+    "numpy": "2.3.3",
+    "pandas": "2.3.2",
+    "scipy": "1.16.2",
+    "matplotlib": "3.10.6",
+    "statsmodels": "0.14.5",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "inputs": [
+    {
+      "hemisphere": "Arctic",
+      "file": "osisaf_nh_sie_daily.txt",
+      "sha256": "19e63d7c4541d81a8a949f8ebc00b95db537227a47e52dbeed01aa67ffe297bd",
+      "creation_metadata": "# Creation date: 2026-11-11 09:36:24.672257",
+      "upstream_url": "https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/nh/ice_extent_nh_sii-v3p0_daily.txt"
+    },
+    {
+      "hemisphere": "Antarctic",
+      "file": "osisaf_sh_sie_daily.txt",
+      "sha256": "9f712c9cdb14fa68b23a42e75e7a69351bd4d93ae898474d51563b6e4b7cb212",
+      "creation_metadata": "# Creation date: 2026-11-11 09:41:25.920986",
+      "upstream_url": "https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/sh/ice_extent_sh_sii-v3p0_daily.txt"
+    }
+  ],
+  "analysis_module_sha256": "dabb5dbffe4c0c6bf742ecb781cfb0bc488181fc805dac78c30d8424ba4816d2",
+  "figures": [
+    "01_data_quality",
+    "02_matched_ytd",
+    "03_seasonal_comparison",
+    "04_current_anomalies",
+    "05_monthly_anomaly_history",
+    "06_monthly_anomaly_heatmap",
+    "07_annual_means_and_trends",
+    "08_monthly_trend_profile",
+    "09_late_summer_months",
+    "10_seasonal_extrema",
+    "11_extrema_timing",
+    "12_residual_diagnostics",
+    "13_start_date_sensitivity",
+    "14_uncertainty_sensitivity",
+    "15_global_context"
+  ],
+  "provider_validation_snapshot": [
+    {
+      "region": "nh",
+      "validated_at_utc": "2026-11-11T16:43:26.035723+00:00",
+      "eligible_months": 569,
+      "max_abs_difference_km2": 0.566666666418314,
+      "mean_abs_difference_km2": 0.2547705855575735,
+      "published_url": "https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/nh/ice_extent_nh_sii-v3p0_monthly.txt",
+      "raw_daily_sha256": "19e63d7c4541d81a8a949f8ebc00b95db537227a47e52dbeed01aa67ffe297bd",
+      "published_snapshot_file": "provider_monthly_nh_snapshot.txt",
+      "published_snapshot_sha256": "948f78c3342e5bf2fa4c6cb6ab8790246d77b97b11737cc966278a986a747e71"
+    },
+    {
+      "region": "sh",
+      "validated_at_utc": "2026-11-11T16:43:26.035723+00:00",
+      "eligible_months": 569,
+      "max_abs_difference_km2": 0.6129032261669636,
+      "mean_abs_difference_km2": 0.2456271700349903,
+      "published_url": "https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/sh/ice_extent_sh_sii-v3p0_monthly.txt",
+      "raw_daily_sha256": "9f712c9cdb14fa68b23a42e75e7a69351bd4d93ae898474d51563b6e4b7cb212",
+      "published_snapshot_file": "provider_monthly_sh_snapshot.txt",
+      "published_snapshot_sha256": "886dc4038e0b2b6452b655696846518c9304d7a03d0d6a357e8ca1e2e5938b7e"
+    }
+  ],
+  "policies": {
+    "missing": "No extra interpolation; retain provider flags",
+    "periods": "Require every calendar day; annual means day-weighted",
+    "daily_reference": "MM-DD groups; actual leap-day sample",
+    "trend_covariance": "Calendar-aware Bartlett HAC, n/(n-2), t(n-2)",
+    "ranks": "Same date, first year 1979, minimum rank for ties",
+    "bootstrap": "Fixed-time circular residual blocks; percentile interval"
+  },
+  "notebook_source_sha256": "4f21e3337cd26078f32a92989688f4b459a58342ae8c29db8cec9bc56cc34d8b"
+}

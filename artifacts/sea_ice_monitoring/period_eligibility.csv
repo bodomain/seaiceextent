@@ -1,0 +1,4 @@
+region,last_primary_trend_year,excluded_full_years_due_to_missing,eligible_full_years
+Arctic,2025,"1984, 1986, 1987, 1988",43
+Antarctic,2025,"1984, 1986, 1987, 1988",43
+Global sum,2025,"1984, 1986, 1987, 1988",43

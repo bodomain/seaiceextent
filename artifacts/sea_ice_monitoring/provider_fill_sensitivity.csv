@@ -1,0 +1,3 @@
+region,month,policy,n,first_year,last_year,slope_decade,ci_low,ci_high,pvalue,hac_lags,theil_sen_decade,intercept_at_center,center_year
+Arctic,September,Mask all provider interp/extrap; require complete month,38,1987,2025,-0.772274598817329,-0.9343579740444172,-0.6101912235902406,1.53906568367794e-11,3,-0.7632812499999999,5.906358863157901,2006.4736842105262
+Antarctic,February,Mask all provider interp/extrap; require complete month,37,1988,2025,-0.1450327859728206,-0.36252324666352576,0.07245767471788456,0.18448751310802725,3,-0.144852120535714,3.229539426574358,2006.1081081081081

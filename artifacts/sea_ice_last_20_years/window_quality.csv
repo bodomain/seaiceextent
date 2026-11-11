@@ -1,0 +1,4 @@
+region,calendar_days,missing_days,provider_interpolated_days,provider_extrapolated_days,provisional_days,complete_months_including_provisional,nominal_complete_months,matched_ytd_years,matched_days_per_year,eligible_complete_years
+Arctic,7254,0,4,0,15,238,237,20,314,19
+Antarctic,7254,0,4,0,15,238,237,20,314,19
+Global sum,7254,0,4,0,15,238,237,20,314,19

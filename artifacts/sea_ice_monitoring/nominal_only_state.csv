@@ -1,0 +1,4 @@
+region,latest_nominal_date,nominal_extent,nominal_day_anomaly,latest_nominal_complete_month
+Arctic,2026-10-26,8.006321,-0.7511165000000002,2026-09
+Antarctic,2026-10-26,16.531691,-1.6171839999999982,2026-09
+Global sum,2026-10-26,24.538012,-2.3683005000000037,2026-09

@@ -1,0 +1,106 @@
+{
+  "execution_time_utc": "2026-11-11T17:09:42.432378+00:00",
+  "data_as_of": "2026-11-10T00:00:00",
+  "primary_window": {
+    "first_year": 2007,
+    "last_year": 2026,
+    "calendar_years": 20,
+    "includes_partial_current_year": true,
+    "primary_statistic": "Matched January 1\u2013cutoff mean, excluding February 29",
+    "ytd_cutoff": "11-10",
+    "matched_ytd_observations": 20,
+    "matched_days_per_year": 314
+  },
+  "baseline": [
+    1991,
+    2020
+  ],
+  "parameters": {
+    "start_year": 2007,
+    "end_year": 2026,
+    "window_years": 20,
+    "baseline": [
+      1991,
+      2020
+    ],
+    "hac_lags": 3,
+    "alpha": 0.05,
+    "bootstrap_draws": 4000,
+    "seed": 20261111,
+    "period_coverage_required": 1.0,
+    "matched_ytd_cutoff": "11-10",
+    "include_provisional_primary": true,
+    "last_complete_year": 2025
+  },
+  "units": "million km\u00b2",
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.3.3",
+    "pandas": "2.3.2",
+    "matplotlib": "3.10.6",
+    "scipy": "1.16.2",
+    "statsmodels": "0.14.5",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "inputs": [
+    {
+      "region": "Arctic",
+      "file": "osisaf_nh_sie_daily.txt",
+      "sha256": "19e63d7c4541d81a8a949f8ebc00b95db537227a47e52dbeed01aa67ffe297bd",
+      "creation_metadata": "# Creation date: 2026-11-11 09:36:24.672257"
+    },
+    {
+      "region": "Antarctic",
+      "file": "osisaf_sh_sie_daily.txt",
+      "sha256": "9f712c9cdb14fa68b23a42e75e7a69351bd4d93ae898474d51563b6e4b7cb212",
+      "creation_metadata": "# Creation date: 2026-11-11 09:41:25.920986"
+    }
+  ],
+  "module_sha256": "dabb5dbffe4c0c6bf742ecb781cfb0bc488181fc805dac78c30d8424ba4816d2",
+  "notebook_source_sha256": "e36b01f25f9e4f3375e991ae0602cd41d7e6962b5fa6f3bc9faaa4c7535f7a3a",
+  "provider_monthly_validation": [
+    {
+      "region": "Arctic",
+      "eligible_months": 238,
+      "max_abs_difference_km2": 0.5000000018626451,
+      "provider_snapshot_sha256": "948f78c3342e5bf2fa4c6cb6ab8790246d77b97b11737cc966278a986a747e71",
+      "provider_url": "https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/nh/ice_extent_nh_sii-v3p0_monthly.txt"
+    },
+    {
+      "region": "Antarctic",
+      "eligible_months": 238,
+      "max_abs_difference_km2": 0.5,
+      "provider_snapshot_sha256": "886dc4038e0b2b6452b655696846518c9304d7a03d0d6a357e8ca1e2e5938b7e",
+      "provider_url": "https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/sh/ice_extent_sh_sii-v3p0_monthly.txt"
+    }
+  ],
+  "product": "EUMETSAT OSI SAF Sea-Ice Index v3.0 (OSI-420-a)",
+  "doi": "10.15770/EUM_SAF_OSI_0026",
+  "data_license": "CC BY 4.0",
+  "figures": [
+    "01_twenty_year_ytd_trends",
+    "01b_supporting_complete_years",
+    "02_decade_seasonal_comparison",
+    "03_recent_monthly_anomalies",
+    "04_recent_anomaly_heatmaps",
+    "05_twenty_year_monthly_trends",
+    "06_late_summer_recent_trends",
+    "07_recent_seasonal_extrema",
+    "08_recent_residual_diagnostics",
+    "09_recent_uncertainty_sensitivity",
+    "10_year_influence",
+    "11_recent_global_contributions",
+    "12_current_year_seasonal"
+  ],
+  "policies": {
+    "primary": "Twenty calendar years including latest year; matched YTD means for equal daily coverage",
+    "provisional": "Include available provisional values in primary YTD and complete monthly/window estimates; flag and compare nominal-only",
+    "baseline": "1991\u20132020 reference, not a fitted trend window",
+    "missing": "No extra interpolation; incomplete monthly/full-year means remain missing",
+    "monthly": "Include each available completed month in latest year; report actual sample size and endpoint",
+    "decades": "Matched-YTD groups of ten; monthly differences require ten complete months per group",
+    "trend": "OLS with calendar-lag HAC, Bartlett 3 years, n/(n-2), t(n-2)",
+    "bootstrap": "Circular residual blocks, fixed years, conditional stationary-residual model"
+  }
+}

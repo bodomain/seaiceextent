@@ -1,5 +1,11 @@
-pandas
+pandas>=2.2
 matplotlib
 statsmodels
 seaborn
+numpy
+scipy
+ipykernel
+nbformat
+nbclient
+nbconvert
 

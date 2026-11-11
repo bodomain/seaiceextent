@@ -1,0 +1,4 @@
+region,date,current_extent,anomaly_vs_1991_2020,same_day_low_rank,same_day_comparison_years,provisional_latest_day,matched_ytd_mean,ytd_low_rank,ytd_comparison_years
+Arctic,2026-11-10,9.037692,-0.867599666666667,4,20,True,10.446570703821655,6,20
+Antarctic,2026-11-10,15.794057,-1.2410888333333343,4,20,True,11.033499308917197,5,20
+Global sum,2026-11-10,24.831749000000002,-2.108688499999996,3,20,True,21.480070012738853,6,20

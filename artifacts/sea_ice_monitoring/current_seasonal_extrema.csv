@@ -1,0 +1,5 @@
+,region,event,window,date,extent,five_day_extent,five_day_date,rank_low_for_min_high_for_max,eligible_years,provisional_days_in_window
+0,Arctic,minimum,Aug–Oct,2026-09-13,5.06777,5.1089042,2026-09-11,14,47,5
+1,Arctic,maximum,Feb–Apr,2026-03-07,14.433286,14.3439562,2026-03-08,46,47,0
+2,Antarctic,minimum,Jan–Mar,2026-02-22,2.862348,2.8950134,2026-02-24,18,46,0
+3,Antarctic,maximum,Aug–Oct,2026-09-10,18.191467,18.149231,2026-09-12,45,47,5

@@ -1,0 +1,4 @@
+region,first_date,last_date,calendar_days,valid_days,missing_days,provider_interpolated_days,provider_extrapolated_days,provisional_days
+Arctic,1978-10-25,2026-11-10,17549,17398,151,1587,3,15
+Antarctic,1978-10-25,2026-11-10,17549,17398,151,1588,3,15
+Global sum,1978-10-25,2026-11-10,17549,17398,151,1589,3,15

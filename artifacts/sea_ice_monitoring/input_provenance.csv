@@ -1,0 +1,3 @@
+hemisphere,file,sha256,creation_metadata,upstream_url
+Arctic,osisaf_nh_sie_daily.txt,19e63d7c4541d81a8a949f8ebc00b95db537227a47e52dbeed01aa67ffe297bd,# Creation date: 2026-11-11 09:36:24.672257,https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/nh/ice_extent_nh_sii-v3p0_daily.txt
+Antarctic,osisaf_sh_sie_daily.txt,9f712c9cdb14fa68b23a42e75e7a69351bd4d93ae898474d51563b6e4b7cb212,# Creation date: 2026-11-11 09:41:25.920986,https://osisaf-hl.met.no/archive/osisaf/sea-ice-index/v3p0/timeseries/sh/ice_extent_sh_sii-v3p0_daily.txt
